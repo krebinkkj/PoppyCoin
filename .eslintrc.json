@@ -1,0 +1,45 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "import", "unused-imports", "promise", "jsdoc"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:import/recommended",
+        "plugin:import/typescript",
+        "plugin:promise/recommended",
+        "plugin:jsdoc/recommended",
+        "prettier"
+    ],
+    "env": {
+        "node": true,
+        "es2022": true
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {}
+    }
+},
+"rules": {
+    "no-console": "warn",
+    "no-unused-vars": "warn",
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "import/order": [
+        "error",
+        {
+            "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+            "alphabetize": {
+                "order": "asc",
+                "caseInsensitive": true 
+            }
+        }
+    ],
+    "unused-imports/no-unused-imports": "error",
+    "promise/catch-or-return": "error",
+    "promise/always-return": "off",
+    "jsdoc/check-aligment": "warn",
+    "jsdoc/check-indentation": "warn"
+    }
+}
