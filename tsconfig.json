@@ -3,9 +3,15 @@
     "rootDir": "./src",
     "outDir": "./dist",
     "target": "ESNext",
-    "module": "commonjs",
+    "module": "CommonJS",
     "strictFunctionTypes": true,
+    "resolveJsonModule": true,
     "skipLibCheck": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "paths": {
+      "@root/*": ["./*"],
+      "@functions/*": ["./src/utils/functions/*"],
+      "@utils/*": ["./src/utils/*"]
+    }
   }
 }
