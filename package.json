@@ -1,6 +1,7 @@
 {
   "name": "poppycoin",
   "module": "index.ts",
+  "version": "1.0",
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest",
