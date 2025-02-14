@@ -182,3 +182,4 @@ backup/
 anticheat.ts
 anticheat_out.ts
 anticheat2.ts
+package-lock.json
